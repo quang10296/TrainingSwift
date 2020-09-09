@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell" customModule="Parse_json" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-Km-gPR">
+                        <rect key="frame" x="80" y="77" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QHH-wv-kVs">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="154"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.2666666667" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="QHH-wv-kVs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2pO-5i-6b8"/>
+                <constraint firstAttribute="trailing" secondItem="QHH-wv-kVs" secondAttribute="trailing" id="L8i-ws-ddk"/>
+                <constraint firstAttribute="bottom" secondItem="QHH-wv-kVs" secondAttribute="bottom" id="Shn-0i-Sj5"/>
+                <constraint firstItem="acZ-Km-gPR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="gHb-9B-ebU"/>
+                <constraint firstItem="QHH-wv-kVs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jli-gG-7Zl"/>
+                <constraint firstItem="acZ-Km-gPR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="tAP-Do-6Pv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="160" height="154"/>
+            <connections>
+                <outlet property="imageCell" destination="QHH-wv-kVs" id="Ngb-Zb-3bN"/>
+                <outlet property="labelName" destination="acZ-Km-gPR" id="fCx-Rs-AHa"/>
+            </connections>
+            <point key="canvasLocation" x="217.39130434782609" y="132.58928571428572"/>
+        </collectionViewCell>
+    </objects>
+</document>
